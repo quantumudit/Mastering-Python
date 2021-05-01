@@ -4,20 +4,20 @@ print("Hello World !!")
 
 # Simple Arithmetical Operations
 
-#Addition
+# Addition
 
 print(2+3)
 
-#Subtraction
+# Subtraction
 print(5-3)
 
-#Multiplication
+# Multiplication
 print(5*5)
 
-#Division
+# Division
 print(10/5)
 
-#Exponent
+# Exponent
 print(2**3)
 
 '''
@@ -26,7 +26,7 @@ Let the price of a doll is $100 and its price incereases by $10 each year,
 then, what would be its price after 5 years ?
 '''
 
-#Solution-1
+# Solution-1
 print(100 + 10 * 5)
 
 
