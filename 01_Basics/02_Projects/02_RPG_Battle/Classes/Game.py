@@ -41,3 +41,11 @@ class Person:
             self.HP = 0
         return self.HP
 
+    def GetHP(self):
+        return self.HP
+
+    def GetMaxHP(self):
+        return self.MaxHP
+    
+    def GetMP(self):
+        return self.MP

@@ -1,5 +1,4 @@
 
-
 from Classes.Game import Person, bcolors
 
 Magic = [
