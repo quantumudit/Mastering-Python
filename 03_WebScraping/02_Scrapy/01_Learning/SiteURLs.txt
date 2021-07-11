@@ -1,0 +1,14 @@
+** PAGES TO WEB SCRAPE **
+==========================
+
+1. Internet Engineering Task Force (IETF) Webpage: http://pythonscraping.com/linkedin/ietf.html
+
+2. Quotes Website: http://quotes.toscrape.com/
+
+3. Books to Scrape: https://books.toscrape.com/index.html
+
+
+
+===== API for Wikipedia data ======
+
+https://www.mediawiki.org/wiki/API:Main_page
