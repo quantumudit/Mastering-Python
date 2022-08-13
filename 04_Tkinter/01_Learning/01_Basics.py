@@ -6,11 +6,15 @@ win = tk.Tk()
 # adding title:
 
 win.title('My GUI App')
+win.minsize(width=500, height=500)
 
 # creating labels:
 
 name_label = ttk.Label(win, text="Enter Your Name: ")
-name_label.grid(row=0, column=0, sticky= tk.W)
+name_label.grid(row=0, column=0, sticky= tk.W, padx=40, pady=20)
+
+# sticky= tk.W
+# W stands for west/left. This will stick the labels left aligned
 
 email_label = ttk.Label(win, text="Enter Your Email: ")
 email_label.grid(row=1, column=0, sticky= tk.W)
@@ -36,7 +40,6 @@ age_var = tk.StringVar()
 age_entrybox = ttk.Entry(win, width=16, textvariable=age_var)
 age_entrybox.grid(row=2, column=1, sticky= tk.W)
 
-
 # Creating combo box:
 
 gender_var = tk.StringVar()
@@ -61,9 +64,8 @@ checkbtn_var = tk.IntVar()
 checkbtn = ttk.Checkbutton(win, text='Check to Subscribe and get daily updates !', variable=checkbtn_var)
 checkbtn.grid(row=5, columnspan=3)
 
-
-# Creating buttons:
-
+# creating call-back function for button
+# =======================================
 def fxaction():
     username = name_var.get()
     age = age_var.get()
@@ -74,16 +76,16 @@ def fxaction():
         subscribed = "No"
     else:
         subscribed = "Yes"
-    
     with open('file.txt', 'a') as f:
         f.write(f'{username},{age},{email},{gender},{user_type},{subscribed}\n')
-    
+
     print("One Item Appended !")
-    
+# ========================================
+
+# Creating buttons:
 
 submit_button = ttk.Button(win, text='Submit', command=fxaction)
 submit_button.grid(row=8, column=0)
-
 
 # Clearing filled boxes post submit:
 
@@ -91,9 +93,9 @@ name_entrybox.delete(0, tk.END)
 email_entrybox.delete(0, tk.END)
 age_entrybox.delete(0, tk.END)
 
+name_label.configure(foreground="#b388ff")
 
 win.mainloop()
-
 
 
 """
